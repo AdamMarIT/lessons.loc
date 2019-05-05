@@ -11,7 +11,7 @@
             </div>
             <div class="col-md-4">
                   <p> </p>
-                  <p>USD&nbsp;</p> 
+                  <p>USD&nbsp;{{ $usd }}</p> 
             </div>
             <div class="col-md-2">
                 <p class="text-right"><b>(067) 540-71-17</b></p>

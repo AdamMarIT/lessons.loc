@@ -34,14 +34,14 @@ class HomeController extends Controller
         //$weatherNow = "<img src='http://openweathermap.org/img/w/" . $icon ."'> ".$temperature;
     
 
-  /*      $client = new \GuzzleHttp\Client();
+        $client = new \GuzzleHttp\Client();
         $response = $client->request('GET', "https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
         $body = $response->getBody(); //получаем объект
         $content = $body->getContents(); //получаем строку в json
         $rates=json_decode($content); 
         $usd_now = $rates[0]->sale;
         $usd = number_format($usd_now, 2, '.', '');
-*/
-         return view('home')->with('icon', $icon)->with('temperature', $temperature); //->with('usd', $usd);
+
+         return view('home')->with('icon', $icon)->with('temperature', $temperature)->with('usd', $usd);
     }
 }
